@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Speech to Text & Translate</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 class="mb-4 text-center">Speech to Text & Translate</h1>
+    
+    <div class="card shadow-sm p-4 mb-4">
+      <button id="start-btn" class="btn btn-primary w-100 mb-3">🎤 Mulai Bicara</button>
+      
+      <h5>Text Asli (Bahasa Indonesia):</h5>
+      <div id="original" class="border p-3 mb-3 bg-white" style="min-height: 70px;"></div>
+      
+      <h5>Terjemahan (Bahasa Jepang):</h5>
+      <div class="d-flex align-items-center mb-3">
+        <div id="translated" class="border p-3 bg-white flex-grow-1" style="min-height: 70px;"></div>
+        <button id="play-btn" class="btn btn-outline-secondary ms-3" title="Putar suara">🔊</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const startBtn = document.getElementById('start-btn');
+  const playBtn = document.getElementById('play-btn');
+  const originalDiv = document.getElementById('original');
+  const translatedDiv = document.getElementById('translated');
+  let translatedText = '';
+
+  function startRecognition() {
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang = 'id-ID';
+    recognition.start();
+
+    recognition.onresult = function(event) {
+      const text = event.results[0][0].transcript;
+      originalDiv.innerText = text;
+
+      fetch('/translate', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({text: text})
+      })
+      .then(res => res.json())
+      .then(data => {
+        translatedText = data.translated;
+        translatedDiv.innerText = translatedText;
+      });
+    };
+
+    recognition.onerror = function(event) {
+      alert('Error: ' + event.error);
+    };
+  }
+
+  function playTranslation() {
+    if (!translatedText) {
+      alert('Tidak ada teks terjemahan untuk diputar.');
+      return;
+    }
+    const utterance = new SpeechSynthesisUtterance(translatedText);
+    utterance.lang = 'ja-JP';
+    window.speechSynthesis.speak(utterance);
+  }
+
+  startBtn.addEventListener('click', startRecognition);
+  playBtn.addEventListener('click', playTranslation);
+</script>
+
+</body>
+</html>

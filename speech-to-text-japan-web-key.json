@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "speech-to-text-japan-web",
+  "private_key_id": "a4932d94ea2300fb89d7596bbd34092ae7b2b3d2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDI8gLAW6xp+Rb+\ndmPZ4W8YrLGlVZtxfVjnlXA1yYdsajptxmQ18k29p5FOS8HzuMTtmKZPA3BjSR3I\ncluSl+Xg8j1mbIVqCIPrLfpltdSwKDOvQRdi+n5F7JxVTBr9wFaBns+6NcH65T4g\nRa/Wr82BWP34jgWD+ZpVUdAIjpUhAJzB1qrR80R2pc8qN0DpM2FoZNDnBAOM6uwJ\nCNbEHL7RSAKiwPlXoxLeIlYaujf9MSpCKUHpZVqTxqACV+CfYE/waKnuNsxfICw8\nER1zD/HOWiniFC6kHQTPoQJXW+Sxwkizm3XT/dQUZX9QZ7yv4ECqbJ7oAr73bH/X\nXwgspX1FAgMBAAECggEAFmTffkp5JieWssMaO6TjpFn9Q5INIb0OFGOovrB37Cgm\nh3ytnFQllSDrO6Y2YOVS5QZhumUwDZCPcNBLI5opX0P/0xNTBvnDTIlc4iA9KhNA\n4fjHahtvySEmXFx/7DmW1Rk6yI4ce8vifDw9QsK9jKW7SrZL0mUVwwkRaHK4werv\nUSC3OcnaR/4tSZF6f12HjyZM7i5J1j4Gz6d0rNiHh52kdJHT0JCKQzStGhdjDewA\n5O6SDMe0lMehCFY7TIATjFO3ogxhH5na/lK4kzRhQVA+Wcvo339ADPms6VfZujYw\nK5VtIUww/I6cdGNR23Pgxwkp6PLEpDRpKcwoSKWmHQKBgQDob2aYD9sg1ZOiqQk1\njlzlecTcznGCcdhO1g33pn1hWJ7IIZAT5ZcfhI7rK5ycAFNf9XF5XYXMLpfYFyYH\nC4Jmt+IPxp8UGNskLRx9ydyAw/9011oFDkLWCZ7RpeB/1+EYJvZQoeVK075lYZZw\nU4qEhl8fmNSmSu0AToR+EFVNzwKBgQDdUVOidfkC9JrE3jmM6IwwyFes/vQ/upsT\ntKitZynudcflQ+CI08qKPb9iVNPwXidnTno/EIOv1xQ+B5yatKlMRawYqVnBaWot\nH9M2SfUj2ISR2XK9hVnFqN4UgAKbKoXkXlJsbcO59W+aiNzJUDpvFCFHkw/Btqk1\nID0ofTI8qwKBgGIjfybfMv9XDiHUyz2goVqGonc0dzrDhLgsqvMQicnLWCdZ/HJa\nMwesuYdT/6jiflF62XGL6k0+swAbLgQ1eNaT90//5fTfVc+deHUoAQEhQD/+GVUf\nI1sp7rPIHNT9ul2vPbrn0F9arf4ySQmeTFMORSWbKtYXtp+1hz2O+eWDAoGAbxKQ\n0dk5VuViA2mwImrXaOgzMGxoMs+5YqNpgFVlMvtDjmmJd8IrRUQGGBiQoXLvfaZi\nLeJg5NAhpZv2WaJP0SqqW1oq5Km+EtWFEBr//7R7nCMwtbMGQfAlPM6eADfQKLO5\n1Bcmgt6N21XS0OoF2ZeVuDEzWDoPI82BRB/JJa8CgYEAkT0pptPueonQGSemhbcR\n1f9Ua2GYpu3DzR03809Eh8kTSaob7AipBldz830xr1oxgxLzNgmeUX6H91j1J66o\nN+BPlwtODhduh+Ge83tjFO3upgPipNDHnNuw9uF3tvCY3zWvblguEWJSLlxZ7ExL\nOXDKhTCuk2txBECEbkPs4ic=\n-----END PRIVATE KEY-----\n",
+  "client_email": "speech-api-user@speech-to-text-japan-web.iam.gserviceaccount.com",
+  "client_id": "112193321724239137771",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/speech-api-user%40speech-to-text-japan-web.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
